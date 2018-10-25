@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  postfix-forward:
+    image: itsalex/postfix-forward-rspamd
+    build: .
+    privileged: true
+    ports:
+      - 25:25
